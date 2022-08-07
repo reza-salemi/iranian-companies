@@ -25,7 +25,7 @@ body {
 .heading {
     position: relative;
     text-align: center;
-    line-height: 1.5;
+    line-height: 2;
     display: inline-block;
     vertical-align: middle;
 }
@@ -40,10 +40,10 @@ body {
 }
 
 .heading:after {
-    right: 105%;
+    right: 100%;
 }
 .heading:before {
-    left: 105%;
+    left: 100%;
 }
 
 .gallery {
@@ -123,9 +123,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0.25rem 3rem;
     color: #777;
-    height: 40px;
     background-color: #f0f0f0;
 }
 
@@ -154,5 +153,12 @@ body {
 @media only screen and (max-width: 520px ) {
     .gallery {
         grid-template-columns: repeat(2, auto);
+    }
+    .heading {
+        font-size: 0.75rem;
+    }
+
+    .footer {
+        flex-direction: column;
     }
 }
